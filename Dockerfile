@@ -1,8 +1,8 @@
 # Dockerizing thunder xware
 # xware version: Xware1.0.31 release date: 2014-08-27
 
-FROM busybox:glibc
-MAINTAINER yinheli <me@yinheli.com>
+FROM debian:wheezy
+
 
 RUN /bin/sed -i.bak 's/archive/cn\.archive/' /etc/apt/sources.list
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
