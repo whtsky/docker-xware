@@ -1,7 +1,7 @@
 # Dockerizing thunder xware
 # xware version: Xware1.0.31 release date: 2014-08-27
 
-FROM debian:latest
+FROM debian:wheezy
 
 
 RUN /bin/sed -i.bak 's/archive/cn\.archive/' /etc/apt/sources.list
